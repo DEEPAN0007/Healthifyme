@@ -1,0 +1,13 @@
+
+.container-fluid{
+    padding: 30px;
+}
+.form-group{
+    padding: 5px;
+}
+label{
+    padding: 10px;
+}
+h2{
+    text-align: center;
+}

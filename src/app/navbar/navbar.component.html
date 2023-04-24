@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <a class="navbar-brand" routerLink="/">HEALTHIFY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/service" routerLinkActive="active">SERVICE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/test" routerLinkActive="active">TEST</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="/track" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              TRACK
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/bmi">BMI</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/step">STEPS</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">CONTACT US</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="/login" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            LOGIN
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/admin">ADMIN</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" routerLink="/user">USER</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/signup" routerLinkActive="active">SIGN UP</a>
+        </li> 
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>

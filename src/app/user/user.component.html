@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<!-- health-tracker-dashboard.component.html -->
+<div class="container-fluid">
+    <div class="container">
+        <h1>Health Tracker Dashboard</h1>
+
+        <!-- Display Health Metrics -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Steps</h5>
+                        <p class="card-text">Total steps: {{ steps }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Calories Burned</h5>
+                        <p class="card-text">Total calories burned: {{ caloriesBurned }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Heart Rate</h5>
+                        <p class="card-text">Average heart rate: {{ heartRate }} bpm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display Recent Activities -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Recent Activities</h3>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let activity of recentActivities">
+                        {{ activity.name }} - {{ activity.duration }} mins
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

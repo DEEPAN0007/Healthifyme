@@ -1,0 +1,50 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#registerCard {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 450px;
+  padding: 10px;
+}
+
+#registerHeader {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #5808e2;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+
+#registerBody {
+  padding: 20px;
+}
+
+.form-group label {
+  color: #333;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 5px;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #8f25bd;
+  border-color: #bb8fce;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #a57ab5;
+  border-color: #a57ab5;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(187, 143, 206, 0.5);
+}

@@ -1,0 +1,68 @@
+/* Custom styles for the navbar */
+.navbar-custom {
+  background-color: #007bff; /* Update with your desired color */
+  padding:12px;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: bold;
+  margin-left: 20px; /* Add 20px right margin */
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff !important; /* Update with your desired color */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #f8f9fa !important; /* Update with your desired color */
+}
+
+.navbar-custom .active {
+  color: #f8f9fa !important; /* Update with your desired color */
+}
+
+/* Custom style for aligning navbar items to right with padding */
+.navbar-custom .collapse.navbar-collapse {
+  justify-content: space-between; /* Use space-between to align to right and left */
+}
+
+.navbar-custom .navbar-nav {
+  padding-right: 20px; /* Update with desired right padding */
+}
+
+.navbar-custom .navbar-nav .nav-item:first-child {
+  padding-left: 20px; /* Update with desired left padding */
+}
+
+/* Custom style for dropdown menu */
+.navbar-custom .dropdown-menu {
+  background-color: #007bff; /* Update with your desired color */
+}
+
+.navbar-custom .dropdown-menu .dropdown-item {
+  color: #eb1313 !important; /* Update with your desired color */
+}
+
+.navbar-custom .dropdown-menu .dropdown-item:hover {
+  color: #f8f9fa !important; /* Update with your desired color */
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item.dropdown .dropdown-menu {
+    background-color: #e6eef5; /* Custom background color for the dropdown menu */
+  }
+
+  .navbar .nav-item.dropdown .dropdown-item {
+    color: #fff; /* Custom text color for dropdown items */
+  }
+
+  .navbar .nav-item.dropdown .dropdown-item:hover {
+    background-color: #007bff; /* Custom background color for hovered dropdown items */
+  }
+
+  .navbar .nav-item.dropdown .dropdown-divider {
+    background-color: #312d2d; /* Custom background color for dropdown divider */
+  }

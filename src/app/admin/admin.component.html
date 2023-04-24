@@ -1,0 +1,58 @@
+<!-- admin-page.component.html -->
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="text-center">Administrator</h2>
+
+        <!-- Display User Management Section -->
+        <div class="management">
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <h3>User Management</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let user of users">
+                                <td>{{ user.id }}</td>
+                                <td>{{ user.name }}</td>
+                                <td>{{ user.email }}</td>
+                                <td>{{ user.role }}</td>
+                                <td>
+                                    <button class="btn btn-primary" (click)="editUser(user)">Edit</button>
+                                    <button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Display Analytics Section -->
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <h3>Analytics</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Users</h5>
+                        <p class="card-text">{{ totalUsers }}</p>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Sales</h5>
+                        <p class="card-text">{{ totalSales }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,6 @@
+.container-fluid{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);   
+    height: 80vh;
+    color: aliceblue;
+}
